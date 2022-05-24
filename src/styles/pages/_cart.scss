@@ -1,0 +1,47 @@
+.woocommerce .quantity .qty {
+    width: 4rem;
+    height: 2.25rem;
+}
+
+#customer_details {
+    margin-bottom: 2rem;
+}
+
+.woocommerce-billing-fields,
+.woocommerce-additional-fields {
+    label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .woocommerce-input-wrapper {
+        width: 100%;
+
+        input,
+        select,
+        .select2-selection {
+            font-size: 0.75rem;
+            font-weight: 500;
+            height: 44px;
+            border-radius: 6px;
+            border-color: #bbb;
+            outline: none;
+            padding: 0 0.75rem;
+
+            &::placeholder {
+                color: $lightgray;
+            }
+        }
+
+        textarea {
+            height: 200px !important;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border-radius: 6px;
+            border-color: #bbb;
+            outline: none;
+            padding: 0.75rem;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.service-content1 {
+    .left-content {
+        padding-right: 4.5rem;
+
+        @media screen and (max-width:1199px) {
+            padding-right: 0;
+            padding-top: 2.5rem;
+        }
+
+        .title {
+            font-size: 5rem;
+            margin-bottom: 2.375rem;
+
+            @media screen and (max-width:1199px) {
+                font-size: 3.25rem;
+                margin-bottom: 1.375rem;
+            }
+
+            span {
+                background: $secondary;
+                padding: 0 0.5rem;
+            }
+        }
+
+        .title2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+
+            @media screen and (max-width:768px) {
+                font-size: 2rem;
+                margin-bottom: 1.375rem;
+            }
+
+            span {
+                background: $primary;
+                color: $white;
+                padding: 0 0.5rem;
+            }
+        }
+
+        .description {
+            margin-bottom: 1.15rem;
+
+            p {
+                font-size: 1.08rem;
+
+                @media screen and (max-width:1199px) {
+                    font-size: 0.938rem;
+                }
+            }
+
+            ul {
+                margin-left: 1.5rem;
+
+                li {
+                    list-style-type: disc;
+                    padding: 0.25rem 0;
+                }
+            }
+
+            ol {
+                margin-left: 1.5rem;
+
+                li {
+                    list-style-type: decimal;
+                    padding: 0.25rem 0;
+                }
+            }
+        }
+
+        a.btn {
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.service-content2 {
+    padding: 5.375rem 0;
+
+    @media screen and (max-width:768px) {
+        padding: 3rem 0;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin: 1.5rem 0;
+
+        @media screen and (max-width:768px) {
+            font-size: 3rem;
+            margin-bottom: 1.375rem;
+        }
+
+        span {
+            background: $primary;
+            color: $white;
+            padding: 0 0.5rem;
+        }
+    }
+
+    .description {
+        margin-bottom: 1.15rem;
+        column-count: 2;
+        column-gap: 2rem;
+
+        @media screen and (max-width:768px) {
+            column-count: auto;
+        }
+
+        p {
+            font-size: 1rem;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+
+            li {
+                list-style-type: disc;
+                padding: 0.25rem 0;
+            }
+        }
+
+        ol {
+            margin-left: 1.5rem;
+
+            li {
+                list-style-type: decimal;
+                padding: 0.25rem 0;
+            }
+        }
+    }
+}

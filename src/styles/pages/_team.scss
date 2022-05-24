@@ -1,0 +1,216 @@
+section.teams {
+    padding: 6.5rem 0;
+
+    @media screen and (max-width:576px) {
+        padding: 4rem 0;
+    }
+
+    .teams-slider {
+        .team-member {
+            .profile-image {
+                @media screen and (max-width:576px) {
+                    margin-bottom: 1.875rem;
+                }
+
+                img {
+                    border-radius: 50rem;
+                    display: inline-block;
+                }
+            }
+
+            .info {
+                margin-left: 3.125rem;
+
+                @media screen and (max-width:576px) {
+                    margin-left: 0;
+                }
+
+                .name {
+                    font-size: 3.438rem;
+                    margin-bottom: 2.875rem;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 2rem;
+                        margin-bottom: 1.875rem;
+                    }
+                }
+
+                .position {
+                    font-size: 1.125rem;
+                    margin-bottom: 1.563rem;
+                }
+
+                .profile-description {
+                    p {
+                        font-size: 1.063rem;
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            bottom: -50px;
+            z-index: 9;
+        }
+
+        .slick-dots li button:before {
+            font-size: 1rem;
+            color: $secondary;
+        }
+
+        .slick-prev {
+            left: -70px;
+
+            &::after {
+                border-color: $primary;
+                border-bottom-style: solid;
+                border-bottom-width: 3px;
+                border-right-style: solid;
+                border-right-width: 3px;
+                content: "";
+                display: inline-block;
+                height: 12px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 12px;
+                transform: rotate(135deg);
+            }
+        }
+
+        .slick-next {
+            right: -70px;
+
+            &::after {
+                border-color: $primary;
+                border-bottom-style: solid;
+                border-bottom-width: 3px;
+                border-right-style: solid;
+                border-right-width: 3px;
+                content: "";
+                display: inline-block;
+                height: 12px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 12px;
+                transform: rotate(315deg);
+            }
+        }
+    }
+
+    .about-team {
+        margin-top: 13rem;
+
+        @media screen and (max-width:576px) {
+            margin-top: 8rem;
+        }
+
+        .title {
+            font-size: 3.709rem;
+            position: relative;
+            margin-bottom: 1.75rem;
+
+            @media screen and (max-width:576px) {
+                font-size: 1.875rem;
+                padding-left: 3.5rem;
+            }
+
+
+            &:before {
+                position: absolute;
+                content: "";
+                background: $light;
+                height: 275px;
+                width: 275px;
+                border-radius: 50rem;
+                left: -120px;
+                top: -95px;
+                z-index: -1;
+
+                @media screen and (max-width:576px) {
+                    height: 136px;
+                    width: 136px;
+                    left: 0;
+                    top: -35px;
+                }
+            }
+        }
+
+        .description {
+            p {
+                font-size: 1.079rem;
+            }
+        }
+    }
+
+    .employees {
+        margin-top: 15rem;
+
+        @media screen and (max-width:576px) {
+            margin-top: 5rem;
+        }
+
+        .employee {
+            margin-bottom: 6.25rem;
+
+            &:first-child {
+                display: none;
+            }
+
+            @media screen and (max-width:576px) {
+                margin-bottom: 5rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .profile-image {
+                @media screen and (max-width:576px) {
+                    margin-bottom: 1.875rem;
+                }
+
+                img {
+                    border-radius: 50rem;
+                }
+            }
+
+            .info {
+                margin-left: 3rem;
+
+                @media screen and (max-width:576px) {
+                    margin-left: 0;
+                }
+
+                .name {
+                    font-size: 3.438rem;
+                    margin-bottom: 2.875rem;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 2rem;
+                        margin-bottom: 1.875rem;
+                    }
+                }
+
+                .profile-description,
+                .qualifications {
+                    p {
+                        font-size: 1.063rem;
+                    }
+
+                    ul {
+                        padding-left: 1.25rem;
+
+                        li {
+                            font-size: 1.063rem;
+                            list-style-type: disc;
+                            padding: 0.25rem 0;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

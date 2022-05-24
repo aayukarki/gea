@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-body;
+    color: $tertiary;
+    font-weight: 400;
+    margin: 0 auto;
+    background-color: $white;
+    font-size: 1rem;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1.15rem;
+    line-height: 1.85;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.lead {
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    color: #959595;
+    margin-bottom: 3.5rem
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+.wp-block-table {
+
+    th,
+    td {
+        border: 1px solid $lightgray;
+        padding: 0.5rem;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $gray;
+}
+
+.form-control {
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 0;
+    border-color: #bbbbbb;
+    background-color: $white;
+    height: 60px;
+    padding: 0 1.5rem;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: $black;
+    }
+}
+
+textarea.form-control {
+    height: 5.625rem !important;
+    padding-top: 1.25rem;
+}
+
+//Hamburger Button
+.navbar-toggler {
+    border: 0;
+    padding-right: 0;
+    overflow: hidden;
+
+    &:focus {
+        outline: 0;
+    }
+
+    .icon-bar {
+        background-color: $primary;
+        display: block;
+        width: 25px;
+        height: 2px;
+        border-radius: 1px;
+        transition: opacity, transform;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+    }
+
+    .icon-bar+.icon-bar {
+        margin-top: 5px;
+    }
+
+    &:not(.collapsed) {
+        .icon-bar {
+            &:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+/*=====// Full Width \\=====*/
+
+.wp-block-columns {
+    height: 100%;
+}
+
+/*=====// Theme Custom \\=====*/
+
+.error-404 {
+    clear: both;
+    padding: 100px 0;
+    text-align: center;
+
+    h1 {
+        color: #313131;
+    }
+
+    input {
+        width: auto;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
+}
+
+.wpcf7-list-item {
+    margin: 0;
+}
+
+.wpcf7-response-output {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.wpcf7 form.invalid {
+    .wpcf7-response-output {
+        color: $danger;
+        border-color: $danger;
+    }
+}
+
+.error-response-output {
+    font-size: 0.75rem;
+    color: $danger;
+    margin-top: -10px;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 0.75rem;
+}
+
+.wpcf7-spinner {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.dropdown {
+    .dropdown-menu {
+        top: 94%;
+        min-width: max-content;
+
+        @media screen and (max-width:768px) {
+            display: block;
+            position: relative;
+            border: none;
+            min-width: 100%;
+            padding-left: 2rem;
+        }
+
+        li.menu-item {
+            border-bottom: none;
+            padding: .5rem 1rem !important;
+
+            @media screen and (max-width:768px) {
+                padding: 0 !important;
+                list-style-type: circle;
+                display: list-item;
+            }
+
+            a {
+                font-size: 0.95rem !important;
+                color: $primary !important;
+
+                @media screen and (max-width:768px) {
+                    color: $black !important;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        @media screen and (min-width:769px) {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+#back-top {
+    position: fixed;
+    right: -1rem;
+    bottom: 14%;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    z-index: 999;
+
+    .back-to-top-icon {
+        transform: rotate(-90deg);
+        padding: 0.75rem 1.05rem;
+        border-radius: 50rem;
+        color: $white;
+        background-color: $secondary;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12), 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+
+    }
+
+    &.active {
+        right: 0.95rem;
+    }
+}

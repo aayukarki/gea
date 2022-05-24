@@ -1,0 +1,102 @@
+section.projects-section {
+    padding: 8rem 0;
+
+    @media screen and (max-width:576px) {
+        padding: 4rem 0;
+    }
+
+    .title {
+        font-size: 3.125rem;
+
+        @media screen and (max-width:768px) {
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 1.875rem;
+        }
+    }
+
+    .cat-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.625rem;
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    select.form-control {
+        width: 400px;
+
+        @media screen and (max-width:1199px) {
+            width: 100%;
+        }
+    }
+
+    .project-holder {
+        .item {
+            margin-bottom: 1rem;
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+            .project-name {
+                font-size: 1.875rem;
+                margin-top: 2rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.375rem;
+                }
+            }
+
+            .project-type {
+                font-size: 0.875rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 0.625rem;
+                }
+            }
+
+            .description {
+                p {
+                    font-size: 1.25rem;
+                    color: $lightgray;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 0.906rem;
+                    }
+                }
+
+                a.btn {
+                    font-size: 0.816rem;
+                    font-weight: bold;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .filter-cat-results .f-cat {
+        opacity: 0;
+        position: absolute;
+        left: -999em;
+
+        &.active {
+            opacity: 1;
+            left: 0;
+            position: relative;
+            transition: 0.35s all ease;
+        }
+    }
+}
+
+section.images-slider {
+    padding-bottom: 0.563rem;
+
+    .item {
+        margin-right: 0.563rem;
+    }
+}

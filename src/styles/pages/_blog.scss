@@ -1,0 +1,310 @@
+.inner-blog-section {
+    padding: 5rem 0;
+
+    @media (max-width: 768px) {
+        padding: 3rem 0;
+    }
+}
+
+.inner-blog-part {
+    padding: 0;
+
+    p,
+    li {
+        font-size: 1.15rem;
+        margin: 0 0 1rem;
+        line-height: 1.5rem;
+
+        @media screen and (max-width:576px) {
+            font-size: 0.95rem;
+        }
+    }
+
+    ol,
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    ol li {
+        list-style: decimal;
+    }
+
+    ul li {
+        list-style: disc;
+    }
+
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.useful-guides {
+    padding: 6.25rem 0 0 0;
+
+    @media screen and (max-width:576px) {
+        padding: 3.75rem 0 0 0;
+    }
+
+    .title {
+        font-size: 3.75rem;
+        margin-bottom: 6.25rem;
+
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+            margin-bottom: 3.25rem;
+        }
+    }
+}
+
+.blog-page-title {
+    font-size: 3.75rem;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        margin: 5rem 0;
+    }
+}
+
+.blog-page-wrapper {
+    padding: 20rem 0 9rem;
+    background: #EDEDED url(../images/grey-bg.png) 0 0/contain repeat-x;
+
+    @media (max-width: 768px) {
+        padding: 5rem 0;
+    }
+}
+
+ul.filter-options {
+    margin-bottom: 8.5rem;
+
+    @media (max-width: 768px) {
+        margin-bottom: 4.5rem;
+    }
+
+    li {
+        button {
+            font-weight: 900;
+            color: $secondary;
+            text-transform: uppercase;
+            background: none;
+            outline: none;
+            border: 2px solid $secondary;
+            border-radius: 9px;
+            padding: 1.125rem 3.5rem;
+            margin: 1rem 1.375rem;
+
+            @media (max-width: 768px) {
+                padding: 1.125rem;
+            }
+        }
+    }
+}
+
+.blog-detail {
+    padding: 0 10px;
+    margin-bottom: 7.375rem;
+    display: none;
+
+    @media (max-width: 768px) {
+        margin-bottom: 1.75rem;
+    }
+
+    .blog-img {
+        margin-bottom: 2.125rem;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .date {
+        font-size: 1rem;
+        color: #001033;
+    }
+
+    .author {
+        font-size: 1.008rem;
+        font-weight: 500;
+        color: #183B56;
+        margin-right: 1.875rem;
+        margin-left: 0.938rem;
+    }
+
+    .bd-tag {
+        display: inline-block;
+        position: relative;
+
+        span {
+            font-size: 0.783rem;
+            color: $secondary;
+            font-weight: bold;
+            display: inline-block;
+
+            a {
+                color: $secondary;
+                background: #f0a81557;
+                padding: 0.5rem 1.25rem;
+                border-radius: 50rem;
+
+                &:hover {
+                    color: $primary
+                }
+            }
+        }
+    }
+
+    .blog-title {
+        font-size: 1.188rem;
+        line-height: 1.25;
+        font-weight: bold;
+        color: #001033;
+        margin: 1.375rem 0;
+
+        a {
+            color: #183B56;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .excerpt {
+        font-size: 0.875rem;
+        color: #001033;
+        margin-bottom: 3.75rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .read-more-btn {
+        a {
+            font-size: 0.668rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 1rem 2.25rem;
+            display: inline-block;
+            box-shadow: 0px 2.13008px 0px #022557;
+            border-radius: 7px;
+        }
+    }
+}
+
+.blog-detail-show {
+    display: block;
+}
+
+.read-more {
+    @media screen and (max-width:1199px) {
+        margin-top: 3rem;
+    }
+
+    button {
+        font-size: 1.125rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 1.5rem 2.75rem;
+        display: inline-block;
+        box-shadow: 0px 2.03108px 0px #6D2737;
+        border-radius: 7px;
+    }
+}
+
+.blog-post-item {
+    position: relative;
+    margin-bottom: 3rem;
+
+    img {
+        width: 100%
+    }
+
+    .blog-content {
+        width: 100%;
+        display: inline-block;
+        padding: 4.5rem 0 0 0;
+
+        .blog-post-tag {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 1.6rem;
+
+            span {
+                font-size: 2.4rem;
+                color: #161616;
+                font-weight: 600;
+                display: inline-block;
+
+                &:first-child:before {
+                    display: none;
+                }
+
+                &:before {
+                    content: ',';
+                    display: inline-block;
+                    color: #161616;
+                    margin: 0 3px 0 -3px;
+                    font-weight: 600;
+                }
+
+                a {
+                    color: #161616;
+
+                    &:hover {
+                        color: $primary
+                    }
+                }
+            }
+        }
+
+        h2 {
+            font-size: 4.6rem;
+            line-height: 125.9%;
+            color: $black;
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $primary
+                }
+            }
+        }
+
+        .bc-desc {
+            width: 100%;
+            display: inline-block;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+            p {
+                font-size: 2.4rem;
+                line-height: 158.9%;
+                color: #838383;
+            }
+        }
+
+        a.btn {
+            border-radius: 0;
+            min-width: 29.2rem;
+            padding: 3rem 3rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+.inner-wrapper {
+    padding: 5rem 0;
+
+    @media (max-width: 768px) {
+        padding: 3rem 0;
+    }
+}

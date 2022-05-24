@@ -1,0 +1,695 @@
+section.maths-tutoring {
+    .section1 {
+        padding: 9rem 0;
+
+        @media screen and (max-width:576px) {
+            padding: 4rem 0 3rem 0;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            position: relative;
+            margin-left: 4rem;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 2rem;
+            }
+
+            @media screen and (max-width:576px) {
+                font-size: 2rem;
+                margin-left: 0;
+                padding-left: 2rem;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                background: $secondary;
+                height: 59px;
+                width: 59px;
+                border-radius: 50rem;
+                left: -69px;
+                top: -25px;
+                z-index: -1;
+
+                @media screen and (max-width:576px) {
+                    height: 45px;
+                    width: 45px;
+                    left: -15px;
+                    top: -30px;
+                }
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                background: #235DAB;
+                height: 188px;
+                width: 188px;
+                border-radius: 50rem;
+                left: -52px;
+                top: -44px;
+                z-index: -1;
+                opacity: 0.25;
+
+                @media screen and (max-width:576px) {
+                    height: 110px;
+                    width: 110px;
+                    left: 0;
+                    top: -30px;
+                }
+            }
+        }
+
+        .description {
+            p {
+                font-size: 1.079rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .more-info {
+            margin-top: 4rem;
+            column-count: 2;
+            column-gap: 2rem;
+
+            @media screen and (max-width:576px) {
+                padding: 0;
+                margin-top: 1rem;
+                column-count: 1;
+            }
+
+            p {
+                font-size: 1.079rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .section2 {
+        padding: 6rem 0;
+
+        @media screen and (max-width:576px) {
+            padding: 3rem 0;
+        }
+
+        .content-holder {
+            margin-right: -2rem;
+
+            @media screen and (max-width:1199px) {
+                margin-right: 0;
+            }
+
+        }
+
+        .title {
+            font-size: 3.75rem;
+            margin-bottom: 3.125rem;
+
+            @media screen and (max-width:576px) {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .description {
+            p {
+                font-size: 1.25rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 2.5rem;
+            margin-bottom: 2.25rem;
+
+            @media screen and (max-width:576px) {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .key-points {
+            margin-top: 8rem;
+
+            @media screen and (max-width:768px) {
+                margin-top: 3rem;
+            }
+
+            .heading {
+                font-size: 3.75rem;
+
+                @media screen and (max-width:1199px) {
+                    margin-bottom: 2rem;
+                }
+
+                @media screen and (max-width:576px) {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .steps {
+                margin: 0;
+
+                .step {
+                    padding: 0 1rem;
+
+                    &:last-child {
+                        .icon-holder {
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .icon-holder {
+                        height: 145px;
+                        width: 145px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3.125rem;
+                        margin: 0 auto;
+
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            right: -140%;
+                            top: 50%;
+                            border: 4px dashed $white;
+                            width: 140%;
+
+                            @media screen and (max-width:768px) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .sub-heading {
+                        font-size: 1.125rem;
+                        margin: 1rem 0 2.25rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .section3 {
+        padding: 7rem 0;
+
+        @media screen and (max-width:768px) {
+            padding: 3rem 0;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 9;
+
+            @media screen and (max-width:576px) {
+                font-size: 2rem;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background: #F0ECEB;
+                height: 177px;
+                width: 177px;
+                border-radius: 50rem;
+                left: -60px;
+                top: -60px;
+                z-index: -1;
+
+                @media screen and (max-width:576px) {
+                    height: 150px;
+                    width: 150px;
+                    left: -20px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: #235dab;
+                height: 68px;
+                width: 68px;
+                border-radius: 50rem;
+                left: -80px;
+                top: -60px;
+                z-index: -1;
+
+                @media screen and (max-width:576px) {
+                    height: 50px;
+                    width: 50px;
+                    left: -30px;
+                }
+            }
+        }
+
+        .strategies {
+            margin-top: 8rem;
+
+            @media screen and (max-width:768px) {
+                margin-top: 4rem;
+            }
+
+            .strategy {
+                margin-bottom: 3.25rem;
+                position: relative;
+                z-index: 9;
+
+                &:last-child {
+                    .icon-holder {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+                .icon-holder {
+                    padding: 2rem 3rem 4rem 3rem;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        right: 0;
+                        bottom: 0;
+                        border: 4px dashed $secondary;
+                        width: 100%;
+                        transform: rotate(90deg);
+                        z-index: -1;
+
+                        @media screen and (max-width:768px) {
+                            display: none;
+                        }
+                    }
+
+                    img {
+                        height: 90px;
+                        width: 90px;
+                        object-fit: contain;
+                    }
+                }
+
+                .initial {
+                    margin-top: -2.25rem;
+                    position: relative;
+
+                    .initial-bg {
+                        padding: 0.85rem 1.25rem;
+                        letter-spacing: 0.15em;
+                        box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.1)
+                    }
+                }
+
+                .heading {
+                    font-size: 1.5rem;
+
+                    @media screen and (max-width:768px) {
+                        margin-top: 2rem;
+                    }
+                }
+
+                .description {
+                    font-size: 1.125em;
+                }
+            }
+        }
+    }
+
+    .section4 {
+        padding: 6rem 0;
+
+        @media screen and (max-width:576px) {
+            padding: 3.625rem 0;
+        }
+
+        .title {
+            font-size: 3.125rem;
+            margin-bottom: 3.125rem;
+
+            @media screen and (max-width:576px) {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 1.875rem;
+            margin-bottom: 1.875rem;
+        }
+
+        .description {
+            p {
+                font-size: 1.079rem;
+            }
+
+            img {
+                margin: 3rem 0;
+                width: 100%;
+
+                @media screen and (max-width:576px) {
+                    margin: 2rem 0;
+                }
+            }
+        }
+
+        .description1 {
+            column-count: 2;
+            column-gap: 6rem;
+            margin-bottom: 5rem;
+
+            @media screen and (max-width:576px) {
+                column-count: 1;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1.079rem;
+            }
+
+            ul {
+                margin-left: 0.5rem;
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 20%;
+                        display: inline-block;
+                        transform: rotate(45deg);
+                        height: 16px;
+                        width: 8px;
+                        border-bottom: 4px solid #78b13f;
+                        border-right: 4px solid #78b13f;
+                    }
+                }
+            }
+        }
+    }
+
+    .section4-maths {
+        padding: 0 0 7rem 0;
+
+        @media screen and (max-width:768px) {
+            padding: 0 0 3rem 0;
+        }
+
+        .title {
+            font-size: 3.625rem;
+            margin-bottom: 3.75rem;
+
+            @media screen and (max-width:576px) {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .description {
+            margin-bottom: 3.75rem;
+
+            p {
+                font-size: 1.25rem;
+            }
+
+            img {
+                margin-top: 2rem;
+                width: 100%;
+            }
+
+            ul {
+                margin-left: 3rem;
+
+                li {
+
+                    list-style-type: disc;
+                    font-size: 1.25rem;
+                    padding: 0.25rem 0;
+                }
+            }
+        }
+
+        .panel-group {
+            border: 1px solid $secondary;
+            border-radius: 1.5rem;
+            overflow: hidden;
+
+            .panel {
+
+                .panel-title {
+                    background: $white;
+                    color: $black;
+                    font-size: 1.969rem;
+                    font-weight: 600;
+                    padding: 1.75rem 3.875rem;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid $white;
+                    position: relative;
+                    cursor: pointer;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 1.5rem;
+                        padding: 1.25rem;
+                        padding-right: 4rem;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "-";
+                        font-size: 2rem;
+                        right: 7%;
+                        top: 27%;
+                        padding: 0.05rem 0.95rem;
+                        border: 1px solid $black;
+                        border-radius: 50rem;
+
+                        @media screen and (max-width:576px) {
+                            top: 30%;
+                            right: 5%;
+                            font-size: 0.75rem;
+                            padding: 0.25rem 0.55rem;
+                        }
+                    }
+                }
+
+                .collapsed {
+                    background: $secondary;
+                    color: $white;
+                    font-size: 1.969rem;
+                    font-weight: 600;
+                    padding: 1.75rem 3.875rem;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid $white;
+                    position: relative;
+                    cursor: pointer;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 1.5rem;
+                        padding: 1.25rem;
+                        padding-right: 4rem;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "+";
+                        font-size: 2rem;
+                        right: 7%;
+                        top: 27%;
+                        padding: 0.15rem 0.75rem;
+                        border: 1px solid $white;
+                        border-radius: 50rem;
+
+                        @media screen and (max-width:576px) {
+                            top: 30%;
+                            right: 5%;
+                            font-size: 0.75rem;
+                            padding: 0.25rem 0.5rem;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    padding: 2.75rem 3.875rem;
+                    background: $white;
+
+                    @media screen and (max-width:576px) {
+                        padding: 0.875rem;
+                    }
+
+                    p {
+                        font-size: 1.094rem;
+                    }
+
+                    ul {
+                        padding-left: 2rem;
+
+                        li {
+                            list-style-type: disc;
+                            padding: 0.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section5 {
+        padding: 6rem 0 0 0;
+
+        @media screen and (max-width:768px) {
+            padding: 3rem 0 0 0;
+        }
+
+        .item {
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                .description {
+                    padding: 0 5rem;
+
+                    @media screen and (max-width:1199px) {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+
+            .main-content {
+                margin-right: -6rem;
+
+                @media screen and (max-width:1199px) {
+                    margin-right: 0;
+                }
+
+                .title {
+                    font-size: 2.375rem;
+                    margin-bottom: 1.75rem;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 2rem;
+                    }
+                }
+
+                .subtitle {
+                    font-size: 1rem;
+                    margin-bottom: 2.875rem;
+                }
+            }
+
+            .description {
+                font-size: 1.036rem;
+                margin-bottom: 3.75rem;
+                padding: 0 2rem;
+
+                @media screen and (max-width:1199px) {
+                    padding: 0 1rem;
+                }
+
+                @media screen and (max-width:576px) {
+                    margin-bottom: 1rem;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .section5-maths {
+        background: #89A085;
+        padding: 7rem 0 16rem 0;
+        margin-bottom: -9rem;
+
+        @media screen and (max-width:768px) {
+            padding: 3rem 0 6rem 0;
+            margin-bottom: -3rem;
+        }
+    }
+
+    .section6 {
+        padding: 7rem 0 0 0;
+
+        @media screen and (max-width:768px) {
+            padding: 3rem 0 0 0;
+
+        }
+
+        .why-it-works {
+            .title {
+                font-size: 2.747rem;
+                position: relative;
+                margin-bottom: 8.5rem;
+
+                @media screen and (max-width:576px) {
+                    margin-bottom: 2.75rem;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background: #b8d7ff;
+                    height: 177px;
+                    width: 177px;
+                    border-radius: 50rem;
+                    left: -110px;
+                    top: -60px;
+                    z-index: -1;
+
+                    @media screen and (max-width:576px) {
+                        height: 150px;
+                        width: 150px;
+                        left: -30px;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: #235dab;
+                    height: 68px;
+                    width: 68px;
+                    border-radius: 50rem;
+                    left: -130px;
+                    top: -60px;
+                    z-index: -1;
+
+                    @media screen and (max-width:576px) {
+                        height: 50px;
+                        width: 50px;
+                        left: -40px;
+                    }
+                }
+            }
+
+            .box {
+                margin-bottom: 4.25rem;
+
+                @media screen and (max-width:576px) {
+                    margin-bottom: 3.125rem;
+                }
+
+                .heading {
+                    margin: 0.25rem 0 1rem 0;
+                    font-size: 1.203rem;
+                }
+
+                .description {
+                    font-size: 0.936rem;
+                }
+            }
+        }
+    }
+}

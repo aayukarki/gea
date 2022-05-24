@@ -1,0 +1,238 @@
+section.the-book {
+    .section1 {
+        padding: 8rem 0;
+
+        @media screen and (max-width:576px) {
+            padding: 3rem 0;
+        }
+
+        .title {
+            font-size: 3.25rem;
+
+            @media screen and (max-width:576px) {
+                font-size: 2.5rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 1.721rem;
+            margin-bottom: 1.25rem;
+
+            @media screen and (max-width:1199px) {
+                font-size: 1.5rem;
+                margin: 1.875rem 0;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .description {
+            p {
+                font-size: 1.178rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 0.938rem;
+                }
+            }
+        }
+    }
+
+    .section2 {
+        padding: 10.625rem 0 16rem;
+        background: $secondary url(../images/secondary-bg.png) 0 100%/contain repeat-x;
+
+        @media screen and (max-width:576px) {
+            padding: 4.5rem 0 8rem 0;
+        }
+
+        .content-with-video {
+            margin-bottom: 5.375rem;
+
+            @media screen and (max-width:576px) {
+                margin-bottom: 3.625rem;
+            }
+
+            .embed-responsive {
+                z-index: 99;
+            }
+
+            .title {
+                font-size: 4.875rem;
+                position: relative;
+                margin-left: 2rem;
+                line-height: 1.25;
+                position: relative;
+                z-index: 9;
+
+                @media screen and (max-width:1199px) {
+                    font-size: 2.25rem;
+                    margin-top: 6.625rem;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    background: #808c9b;
+                    height: 74px;
+                    width: 74px;
+                    border-radius: 50rem;
+                    left: -80px;
+                    top: -70px;
+                    z-index: -1;
+
+                    @media screen and (max-width:576px) {
+                        height: 36px;
+                        width: 36px;
+                        left: -29px;
+                        top: -50px;
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    background: $primary;
+                    height: 167px;
+                    width: 167px;
+                    border-radius: 50rem;
+                    left: -66px;
+                    top: -60px;
+                    z-index: -1;
+
+                    @media screen and (max-width:576px) {
+                        height: 90px;
+                        width: 90px;
+                        left: -22px;
+                        top: -44px;
+                    }
+                }
+            }
+
+            .subtitle {
+                font-size: 3.323rem;
+                margin-left: 2rem;
+                line-height: 1.25;
+
+                @media screen and (max-width:1199px) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .description {
+            margin-right: 2.5rem;
+            column-count: 2;
+            column-gap: 4rem;
+
+            @media screen and (max-width:576px) {
+                margin-right: 0;
+                column-count: 1;
+            }
+
+            p {
+                font-size: 1.079rem;
+            }
+        }
+
+    }
+
+    .section3 {
+        padding: 2.125rem 0 6.25rem 0;
+
+        .buy-book {
+            .title {
+                font-size: 2rem;
+                margin-bottom: 0;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.25rem;
+                    margin-bottom: 1.375rem;
+                }
+
+                span {
+                    color: $secondary;
+                    font-weight: 900;
+                }
+            }
+
+            .subtitle {
+                font-size: 1.375rem;
+                margin-top: 1.75rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1rem;
+                }
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            a.btn {
+                font-size: 0.938rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                padding: 1.25rem 3.875rem;
+                box-shadow: 0px 1.66818px 0px #021442;
+                border-radius: 10px;
+
+            }
+        }
+
+        .book-form {
+            margin-top: 8.75rem;
+
+            @media screen and (max-width:576px) {
+                margin-top: 2.125rem;
+            }
+
+            .title {
+                font-size: 2rem;
+                line-height: 1.25;
+                margin-bottom: 1.25rem;
+
+                @media screen and (max-width:576px) {
+                    font-size: 1.375rem;
+                }
+            }
+
+            .subtitle {
+                font-size: 1.188rem;
+                margin-bottom: 2.75rem;
+            }
+
+            .form-contain {
+                .form-group {
+                    position: relative;
+
+                    label {
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                    }
+
+                    .form-control {
+                        font-size: 0.875rem;
+                        border-radius: 6px;
+                        height: 48px;
+                    }
+                }
+
+                .site-btn {
+                    font-size: 0.772rem;
+                    font-weight: 900;
+                    padding: 1rem 4rem;
+                    background: $secondary;
+                    color: $white;
+                    box-shadow: 0px 1.54346px 0px #6D2737;
+                    border-radius: 10px;
+                    text-transform: uppercase;
+                    margin-top: 1.75rem;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+}

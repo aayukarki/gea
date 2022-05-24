@@ -1,0 +1,118 @@
+section.faqs {
+    padding-top: 7.875rem;
+
+    @media screen and (max-width:576px) {
+        padding-top: 2.875rem;
+    }
+
+    .section1 {
+        margin-bottom: 13.125rem;
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 5rem;
+        }
+
+        .panel-group {
+            border: 1px solid #89A085;
+            border-radius: 1.5rem;
+            overflow: hidden;
+
+            .panel {
+
+                .panel-title {
+                    background: $white;
+                    color: $black;
+                    font-size: 1.969rem;
+                    font-weight: 600;
+                    padding: 1.75rem 6.875rem;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid $white;
+                    position: relative;
+                    cursor: pointer;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 1rem;
+                        padding: 0.875rem;
+                        padding-right: 4rem;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "-";
+                        font-size: 2rem;
+                        right: 7%;
+                        top: 27%;
+                        padding: 0.05rem 0.95rem;
+                        border: 1px solid $black;
+                        border-radius: 50rem;
+
+                        @media screen and (max-width:576px) {
+                            top: 30%;
+                            right: 5%;
+                            font-size: 0.75rem;
+                            padding: 0.25rem 0.55rem;
+                        }
+                    }
+                }
+
+                .collapsed {
+                    background: #89A085;
+                    color: $white;
+                    font-size: 1.969rem;
+                    font-weight: 600;
+                    padding: 1.75rem 6.875rem;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid $white;
+                    position: relative;
+                    cursor: pointer;
+
+                    @media screen and (max-width:576px) {
+                        font-size: 1rem;
+                        padding: 0.875rem;
+                        padding-right: 4rem;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "+";
+                        font-size: 2rem;
+                        right: 7%;
+                        top: 27%;
+                        padding: 0.15rem 0.75rem;
+                        border: 1px solid $white;
+                        border-radius: 50rem;
+
+                        @media screen and (max-width:576px) {
+                            top: 30%;
+                            right: 5%;
+                            font-size: 0.75rem;
+                            padding: 0.25rem 0.5rem;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    padding: 2.75rem 6.875rem;
+
+                    @media screen and (max-width:576px) {
+                        padding: 0.875rem;
+                    }
+
+                    p {
+                        font-size: 1.094rem;
+                    }
+
+                    ul {
+                        padding-left: 2rem;
+
+                        li {
+                            list-style-type: disc;
+                            padding: 0.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

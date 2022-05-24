@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+$font-roboto: 'Roboto',
+sans-serif;
+$font-noto: 'Noto Sans Display',
+sans-serif;
+$font-body: $font-noto;
+
+.font-roboto {
+	font-family: $font-roboto;
+}
+
+// Font Weights
+$font-weights: ('light': 300,
+	'medium': 500,
+	'semibold': 600,
+	'bold': 700,
+	'extrabold': 800,
+	'black': 900,
+);
+
+@each $name,
+$weight in $font-weights {
+	.font-weight-#{$name} {
+		font-weight: $weight;
+	}
+}
